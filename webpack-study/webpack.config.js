@@ -2,7 +2,6 @@
  * Created by yjf on 2017/8/3.
  */
 
-/* webpack 服务文件 */
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin"); //将css独立引入变成link标签形式

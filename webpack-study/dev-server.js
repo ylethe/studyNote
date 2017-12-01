@@ -1,6 +1,7 @@
 /**
  * Created by yjf on 2017/8/3.
  */
+/* webpack 服务文件 */
 const webpack = require('webpack');
 const config = require('./webpack.config');
 const webpackDevServer = require('webpack-dev-server');
