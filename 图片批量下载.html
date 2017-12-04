@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="download(imgList)">下载</button>
+</body>
+<script type="text/javascript">
+    let imgList = ['http://oia85104s.bkt.clouddn.com/19504691.jpeg', 'http://oia85104s.bkt.clouddn.com/PictureUnlock_193139.pictureunlock.jpg']
+    function download(imgList) {
+        imgList.map(i => {
+            let a = document.createElement('a');
+            a.setAttribute('download', '');
+            a.href = i;
+            document.body.appendChild(a);
+            a.click()
+        })
+    }
+</script>
+</html>
